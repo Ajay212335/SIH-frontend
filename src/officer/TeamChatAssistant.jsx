@@ -2,7 +2,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./TeamChatAssistant.css";
 
-const API_BASE_URL = "http://localhost:5006";
+const API_BASE_URL = "http://10.101.94.107:5006";
 
 const TeamChatAssistant = ({ complaintId, attackType }) => {
   const [messages, setMessages] = useState([

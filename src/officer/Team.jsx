@@ -3,7 +3,7 @@ import React, { useEffect, useState, useCallback } from "react";
 import "./team.css";
 import TeamChatAssistant from "./TeamChatAssistant.jsx";
 
-const API_BASE_URL = "http://127.0.0.1:5006";
+const API_BASE_URL = "http://10.101.94.107:5006";
 
 const TeamDashboard = () => {
   // Team name should be set at login and saved to localStorage:

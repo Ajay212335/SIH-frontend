@@ -27,7 +27,7 @@ const Volunteer = () => {
   };
 
   try {
-    const response = await fetch(`${import.meta.env.VITE_BACKEND_URL || "http://127.0.0.1:5006"}/api/volunteer`, {
+    const response = await fetch(`${import.meta.env.VITE_BACKEND_URL || "http://10.101.94.107:5006"}/api/volunteer`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData),

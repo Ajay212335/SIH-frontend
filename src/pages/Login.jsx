@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Login.css";
 
-const API_BASE_URL = "http://localhost:5006";
+const API_BASE_URL = "http://10.101.94.107:5006";
 
 // Generate Captcha
 const generateCaptcha = () => {

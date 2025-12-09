@@ -29,7 +29,7 @@ export default function TrackComplaint() {
     setResults(null);
 
     try {
-      const resp = await fetch(`http://localhost:5006/api/get_complaint/${encodeURIComponent(id)}`);
+      const resp = await fetch(`http://10.101.94.107:5006/api/get_complaint/${encodeURIComponent(id)}`);
       const data = await resp.json().catch(() => ({}));
 
       if (resp.ok && data.success && data.complaint) {
@@ -157,7 +157,7 @@ export default function TrackComplaint() {
                 <div className="completion-report">
                   <h4>Completion Report:</h4>
                   <a
-                    href={`http://localhost:5006/${results.completion_report}`}
+                    href={`http://10.101.94.107:5006/${results.completion_report}`}
                     target="_blank"
                     rel="noopener noreferrer"
                   >

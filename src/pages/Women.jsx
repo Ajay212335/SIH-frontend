@@ -86,7 +86,7 @@ export default function Women() {
 
     try {
       setLoading(true);
-      await axios.post("http://localhost:5006/send-otp", { phone });
+      await axios.post("http://10.101.94.107:5006/send-otp", { phone });
       setOtpSent(true);
       alert("OTP sent successfully!");
     } catch (err) {
@@ -104,7 +104,7 @@ export default function Women() {
 
     try {
       setLoading(true);
-      const verifyResp = await axios.post("http://localhost:5006/verify-otp", {
+      const verifyResp = await axios.post("http://10.101.94.107:5006/verify-otp", {
         phone,
         otp: formData.otp
       });
@@ -117,7 +117,7 @@ export default function Women() {
       setOtpVerified(true);
 
       // Submit complaint
-      const submitResp = await axios.post("http://localhost:5006/submit-complaint-women", {
+      const submitResp = await axios.post("http://10.101.94.107:5006/submit-complaint-women", {
         ...formData,
         phone
       });

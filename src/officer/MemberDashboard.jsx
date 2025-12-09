@@ -12,7 +12,7 @@ export default function MemberDashboard() {
   const [activeMenu, setActiveMenu] = useState("complaints");
   const [loading, setLoading] = useState(false);
   const [rawResponse, setRawResponse] = useState(null);
-  const BASE = "http://localhost:5006";
+  const BASE = "http://10.101.94.107:5006";
 
   useEffect(() => {
     if (team) {

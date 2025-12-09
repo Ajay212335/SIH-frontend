@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./login.css";
 
-const API_BASE = "http://localhost:5006"; // Update if needed
+const API_BASE = "http://10.101.94.107:5006"; // Update if needed
 
 export default function MemberLogin() {
   const [email, setEmail] = useState("");
